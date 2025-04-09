@@ -10,7 +10,7 @@ public class Polynomial {
 	 * Constructs a Polynomial with no terms yet.
 	 */
 	public Polynomial() {
-		//FIXME
+		list = new.LinkedList<>();
 	}
 
 	
@@ -20,7 +20,7 @@ public class Polynomial {
 	 * @return polynomial with added term
 	 */
 	public void addTerm(double coeff) {
-		//FIXME
+		list.add(coeff);  
 	}
 	
 	/*
@@ -30,8 +30,13 @@ public class Polynomial {
 	 */
 	public String toString() {
 		return ""; //FIXME
+		String Cheese = "";
+		for (int i = 0; i<list.size(); i++) {
+			 = list.get(i);
+		list.size(i++);
+		result += result
 	}
-	
+	}
 	/**
 	 * 
 	 * @param x
@@ -39,6 +44,12 @@ public class Polynomial {
 	 */
 	public double evaluate(double x) {
 		return 0;//FIXME
+		double result = 0;
+		double n = list.size();
+		for (int i = 0; i<n; i++) {
+			double cat = list.get(i)*Math.pow(x,n-i);
+			result += cat; 
+		}
 	}
 
 	
